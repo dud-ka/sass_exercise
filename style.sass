@@ -113,56 +113,46 @@ nav
 		text-transform: uppercase
 
 /*=== GALLERY ===*/
+.gallery 
+	line-height: 0
+	.image
+		width: 100%
+		position: relative
+		overflow: hidden
+		&:hover
+			.layer
+				background: $transparency
+		&:hover
+			.layer
+				.fa
+					opacity: 1
+		.layer
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			text-align: center
+			transition: .5s
+			color: $white
+			.fa
+				color: $white
+				position: relative
+				top: 50%
+				transform: translateY(-50%)
+				text-align: center
+				margin-right: 30px
+				padding: 8px
+				border-radius: 10px
+				background: $lightgray
+				opacity: 0
+				transition: opacity .5s
+				&:last-child
+					margin-right: 0
+	img 
+		width: 100%
 
-.image {  
-	width: 100%;
-	position: relative; 
-	overflow: hidden;
-}
 
-.layer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	transition: .5s;
-	color: #fff;
-}
-
-.layer .fa {
-	color: #fff;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	text-align: center;
-	margin-right: 30px;
-	padding: 8px;
-	border-radius: 10px;
-	background: #ccc;
-	opacity: 0;
-	transition: opacity .5s;
-}
-
-.layer .fa:last-child {
-	margin-right: 0;
-}
-
-.gallery img {
-	width: 100%;
-}
-
-.image:hover .layer {
-	background: rgba(0, 0, 0, .5);
-}
-
-.image:hover .layer .fa {
-	opacity: 1;
-}
-.gallery {
-	line-height: 0;
-}
 /* === CREW === */
 
 #gallery img {
