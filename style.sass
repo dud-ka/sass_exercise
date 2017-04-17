@@ -115,44 +115,46 @@ nav
 		text-transform: uppercase
 
 /*=== GALLERY ===*/
+
+.image 
+	width: 100%
+	position: relative 
+	overflow: hidden
+	&:hover
+		.layer
+			background: $transparency
+		.fa
+			opacity: 1
+	
+.layer
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	text-align: center
+	transition: .5s
+	color: $white
+	.fa
+		color: $white
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		text-align: center
+		margin-right: 30px
+		padding: 8px
+		border-radius: 10px
+		background: $gray
+		opacity: 0
+		transition: opacity .5s
+		&:last-child
+			margin-right: 0
+
 .gallery 
 	line-height: 0
-	.image
+	img
 		width: 100%
-		position: relative
-		overflow: hidden
-		&:hover
-			.layer
-				background: $transparency
-		&:hover
-			.layer
-				.fa
-					opacity: 1
-		.layer
-			position: absolute
-			top: 0
-			left: 0
-			height: 100%
-			width: 100%
-			text-align: center
-			transition: .5s
-			color: $white
-			.fa
-				color: $white
-				position: relative
-				top: 50%
-				transform: translateY(-50%)
-				text-align: center
-				margin-right: 30px
-				padding: 8px
-				border-radius: 10px
-				background: $lightgray
-				opacity: 0
-				transition: opacity .5s
-				&:last-child
-					margin-right: 0
-	img 
-		width: 100%
+
 
 
 /* === CREW === */
