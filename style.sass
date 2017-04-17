@@ -9,6 +9,7 @@ $blue: #00C7E8
 .contentcenter
 	margin: 0 auto
 	max-width: 1200px
+
 *
 	box-sizing: border-box
 
@@ -18,7 +19,6 @@ body
 .container
 	@extend .contentcenter
 	width: 100%
-
 
 .row 
 	margin: 0
@@ -220,43 +220,35 @@ nav
 		color: $blue
 
 /*=== FOOTER ===*/
-.footer {
-	margin: 0 auto;
-	width: 100%;
-	background: #313332;
-	padding: 0;
-	color: #fff;
-}
+.footer
+	margin: 0 auto
+	width: 100%
+	background: $gray
+	padding: 0
+	color: $white
+	h2
+		text-transform: uppercase
+	[class*="col-"]
+		padding: 10px
+	.left
+		p
+			font-weight: bold
 
-.social-media {
-	background: #00C7E8;
-	width: 40px;
-	height: 40px;
-	margin: 0 auto;
-	padding: 0;
-}
+.social-media
+	background: $blue
+	width: 40px
+	height: 40px
+	margin: 0 auto
+	padding: 0
 
-.social-media i {
-	line-height: 40px;
-	text-align: center;
-	display: block;
-	/*width: 100%;*/
-}
-
-.footer [class*="col-"] {
-	padding: 10px;
-}
-.footer .social-media i:last-child {
-	margin-right: 0;
-}
-
-.footer h2 {
-	text-transform: uppercase;
-}
-
-.footer .left > p {
-	font-weight: bold;
-}
+.social-media
+	i 
+		line-height: 40px
+		text-align: center
+		display: block
+		&:last-child
+			margin-right: 0
+	
 
 /*=== COPYRIGHT ===*/
 .copyright {
