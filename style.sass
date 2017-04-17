@@ -1,4 +1,6 @@
 $gray: #313332
+$mediumgray:
+$lightgray: #CCC
 $transparency: rgba(0, 0, 0, 0.3)
 $white: #FFF
 
@@ -79,32 +81,24 @@ nav
 	transform: translateY(-50%)
 
 /*=== BENEFITS ===*/
-.benefits {
-	text-align: center;
-}
-
-.benefits .col-4 i {
-	padding: 40px;
-	background-color: #ccc;
-	color: #fff;
-	border-radius: 20px;
-}
-
-.benefits .icon:hover h2 {
-	color: blue;
-}
-
-.benefits .icon:hover i {
-	background: blue;
-}
-
-.box {
-	margin: 20px auto;
-}
-
-.icon >h2 {
-	text-transform: uppercase;
-}
+.benefits
+	text-align: center
+	.col-4
+		i
+			padding: 40px
+			background-color: $lightgray
+			color: $white
+			border-radius: 20px
+	.icon
+		h2
+			text-transform: uppercase
+		&:hover
+			h2
+				color: $gray
+			i
+				background: $gray
+	.box 
+		margin: 20px auto
 
 /*=== FEATURED WORKS ===*/
 .featured {
