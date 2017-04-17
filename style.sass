@@ -1,0 +1,337 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+/* === HEADER === */
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+	background: #313332;
+}
+
+nav ul {	
+	float: right;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+nav ul li {  
+	display: inline-block;
+	margin: 0;
+	font-size: 16px;
+}
+
+nav ul li>a {	
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	margin: 0;
+}
+
+nav ul li:hover {	
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav img {
+	padding: 10px 0;
+}
+
+nav {
+	line-height: 0;
+}
+/*=== JUMBOTRON ===*/
+.hero {
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/potw1711a.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.slogan {
+	padding: 10px 70px 10px 10px; 
+	width: 30%;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 14px;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translateY(-50%);
+}
+
+/*=== BENEFITS ===*/
+.benefits {
+	text-align: center;
+}
+
+.benefits .col-4 i {
+	padding: 40px;
+	background-color: #ccc;
+	color: #fff;
+	border-radius: 20px;
+}
+
+.benefits .icon:hover h2 {
+	color: blue;
+}
+
+.benefits .icon:hover i {
+	background: blue;
+}
+
+.box {
+	margin: 20px auto;
+}
+
+.icon >h2 {
+	text-transform: uppercase;
+}
+
+/*=== FEATURED WORKS ===*/
+.featured {
+	width: 50%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.featured > h2 {
+	text-transform: uppercase;
+}
+
+/*=== GALLERY ===*/
+
+.image {  
+	width: 100%;
+	position: relative; 
+	overflow: hidden;
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	transition: .5s;
+	color: #fff;
+}
+
+.layer .fa {
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	margin-right: 30px;
+	padding: 8px;
+	border-radius: 10px;
+	background: #ccc;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.layer .fa:last-child {
+	margin-right: 0;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+.image:hover .layer {
+	background: rgba(0, 0, 0, .5);
+}
+
+.image:hover .layer .fa {
+	opacity: 1;
+}
+.gallery {
+	line-height: 0;
+}
+/* === CREW === */
+
+#gallery img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+#gallery .image {
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#gallery h3 {
+	text-align: center;
+}
+
+#gallery p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: 0;
+	margin: 0;
+	transition: opacity .5s;
+}
+
+#gallery .layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+
+#gallery .image:hover .layer {
+	background: rgba(0, 0, 0, .5);
+}
+
+#gallery .image:hover .layer p {
+	opacity: 1;
+}
+
+#gallery {
+	line-height: 0;
+}
+
+.crew {
+	margin-top: 20px;
+}
+
+/*=== TITLE ===*/
+
+.title {
+	background-color: #000;
+	width: 100%;
+}
+
+.title p,
+.title h2 {
+	color: #fff;
+}
+
+.title img {
+	width: 100%;
+}
+
+/*=== NUMBERS ===*/
+.numbers h2,
+.numbers p {
+	text-transform: uppercase;
+}
+
+.numbers {
+	text-align: center;
+}
+.numbers p {
+	color: #00C7E8;
+}
+/*=== FOOTER ===*/
+.footer {
+	margin: 0 auto;
+	width: 100%;
+	background: #313332;
+	padding: 0;
+	color: #fff;
+}
+
+.social-media {
+	background: #00C7E8;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.social-media i {
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	/*width: 100%;*/
+}
+
+.footer [class*="col-"] {
+	padding: 10px;
+}
+.footer .social-media i:last-child {
+	margin-right: 0;
+}
+
+.footer h2 {
+	text-transform: uppercase;
+}
+
+.footer .left > p {
+	font-weight: bold;
+}
+
+/*=== COPYRIGHT ===*/
+.copyright {
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: rgb(37, 39, 38);
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	border-top: 1px #4b514e solid;
+}
+
+.copyright p {
+	margin: 0;
+}
+
+
+/*=== CLEARFIX ===*/
+
+.row::before,
+.row::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
