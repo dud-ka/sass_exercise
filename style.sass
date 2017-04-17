@@ -265,11 +265,10 @@ nav
 		margin: 0
 
 /*=== CLEARFIX ===*/
-
-.row::before,
-.row::after {
-	content: " ";
-	display: table;
-	clear: both;
-}
+.row
+	&::before,
+	&::after
+		content: " "
+		display: table
+		clear: both
 
