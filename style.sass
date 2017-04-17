@@ -4,6 +4,9 @@ $lightgray: #CCC
 $transparency: rgba(0, 0, 0, 0.3)
 $white: #FFF
 
+.contentcenter
+	margin: 0 auto
+	max-width: 1200px
 *
 	box-sizing: border-box
 
@@ -11,9 +14,9 @@ body
 	margin: 0
 
 .container
+	@extend .contentcenter
 	width: 100%
-	margin: 0 auto
-	max-width: 1200px
+
 
 .row 
 	margin: 0
@@ -101,17 +104,13 @@ nav
 		margin: 20px auto
 
 /*=== FEATURED WORKS ===*/
-.featured {
-	width: 50%;
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.featured > h2 {
-	text-transform: uppercase;
-}
+.featured
+	@extend .contentcenter
+	width: 50%
+	text-align: center
+	margin-bottom: 50px
+	h2
+		text-transform: uppercase
 
 /*=== GALLERY ===*/
 
