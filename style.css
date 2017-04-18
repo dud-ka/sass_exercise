@@ -1,0 +1,469 @@
+.contentcenter, .container, .featured {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.container {
+  width: 100%; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+/* === HEADER === */
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  background: #313332; }
+
+nav {
+  line-height: 0; }
+  nav ul {
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0; }
+  nav li {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px; }
+    nav li:hover {
+      background-color: rgba(0, 0, 0, 0.3); }
+  nav a {
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 0; }
+  nav img {
+    padding: 10px 0; }
+
+/*=== JUMBOTRON === */
+.hero {
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/potw1711a.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.slogan {
+  padding: 10px 70px 10px 10px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateY(-50%); }
+
+/*=== BENEFITS === */
+.benefits {
+  text-align: center; }
+  .benefits .col-4 i {
+    padding: 40px;
+    background-color: #CCC;
+    color: #FFF;
+    border-radius: 20px; }
+  .benefits .icon h2 {
+    text-transform: uppercase; }
+  .benefits .icon:hover h2 {
+    color: #313332; }
+  .benefits .icon:hover i {
+    background: #313332; }
+  .benefits .box {
+    margin: 20px auto; }
+
+/*=== FEATURED WORKS === */
+.featured {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 50px; }
+  .featured h2 {
+    text-transform: uppercase; }
+
+/*=== GALLERY === */
+.image {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .image:hover .layer {
+    background: rgba(0, 0, 0, 0.3); }
+  .image:hover .fa {
+    opacity: 1; }
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  color: #FFF; }
+  .layer .fa {
+    color: #FFF;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-right: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #313332;
+    opacity: 0;
+    transition: opacity 0.5s; }
+    .layer .fa:last-child {
+      margin-right: 0; }
+
+.gallery {
+  line-height: 0; }
+  .gallery img {
+    width: 100%; }
+
+/* === CREW === */
+.crew {
+  margin-top: 20px; }
+  .crew #gallery {
+    line-height: 0; }
+    .crew #gallery img {
+      width: 100%;
+      height: 100%;
+      padding: 0; }
+    .crew #gallery .image {
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      margin: 0 auto; }
+      .crew #gallery .image:hover .layer {
+        background: rgba(0, 0, 0, 0.3); }
+        .crew #gallery .image:hover .layer p {
+          opacity: 1; }
+    .crew #gallery h3 {
+      text-align: center; }
+    .crew #gallery p {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #FFF;
+      opacity: 0;
+      margin: 0;
+      transition: opacity 0.5s; }
+    .crew #gallery .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s; }
+
+/*=== TITLE === */
+.title {
+  background-color: #000;
+  width: 100%; }
+  .title p,
+  .title h2 {
+    color: #FFF; }
+  .title img {
+    width: 100%; }
+
+/*=== NUMBERS === */
+.numbers {
+  text-align: center; }
+  .numbers h2,
+  .numbers p {
+    text-transform: uppercase; }
+  .numbers p {
+    color: #00C7E8; }
+
+/*=== FOOTER === */
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  background: #313332;
+  padding: 0;
+  color: #FFF; }
+  .footer h2 {
+    text-transform: uppercase; }
+  .footer [class*="col-"] {
+    padding: 10px; }
+  .footer .left p {
+    font-weight: bold; }
+
+.social-media {
+  background: #00C7E8;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0; }
+
+.social-media i {
+  line-height: 40px;
+  text-align: center;
+  display: block; }
+  .social-media i:last-child {
+    margin-right: 0; }
+
+/*=== COPYRIGHT === */
+.copyright {
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #252726;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
+  border-top: 1px #4b514e solid; }
+  .copyright p {
+    margin: 0; }
+
+/*=== CLEARFIX === */
+.row::before, .row::after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/*=== GRID === */
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 0; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+/*=== OFFSETS === */
+.col-offset-0 {
+  margin-left: 0; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
+
+@media (max-width: 767px) {
+  /* For mobile: */
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; }
+
+  .container {
+    max-width: 767px; }
+
+  /* === HEADER === */
+  header {
+    max-width: 767px;
+    width: 100%;
+    height: auto; }
+    header nav {
+      text-align: center; }
+      header nav img {
+        margin: 0 auto; }
+      header nav ul {
+        float: none; }
+        header nav ul li {
+          display: block; }
+
+  /*=== JUMBOTRON === */
+  .slogan {
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none; }
+
+  /*=== BENEFITS === */
+  .benefits h2,
+  .benefits p {
+    padding: 15px; }
+
+  /*=== FEATURED WORKS === */
+  .featured {
+    width: 90%;
+    max-width: 767px; }
+
+  /*=== TITLE === */
+  .title [class*="col-s"] {
+    padding: 15px; }
+  .title h2 {
+    text-align: center; }
+
+  .image-moon img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    max-width: 350px;
+    display: block; } }
+/*=== FOOTER ===*/
+ * footer h2,
+ * footer p
+ * 	padding: 15px */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* For tablets */
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; }
+
+  .slogan {
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none; } }
+
+/*# sourceMappingURL=style.css.map */
