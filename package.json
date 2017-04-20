@@ -1,0 +1,29 @@
+{
+  "name": "6_2_sass",
+  "version": "1.0.0",
+  "description": "Grunt project",
+  "main": "kodilla-grunt.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dud-ka/sass_exercise.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dud-ka/sass_exercise/issues"
+  },
+  "homepage": "https://github.com/dud-ka/sass_exercise#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
