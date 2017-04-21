@@ -46,7 +46,7 @@ nav {
   nav img {
     padding: 10px 0; }
 
-/*=== JUMBOTRON === */
+/*=== JUMBOTRON ===*/
 .hero {
   padding: 0;
   width: 100%;
@@ -73,7 +73,7 @@ nav {
   left: 70%;
   transform: translateY(-50%); }
 
-/*=== BENEFITS === */
+/*=== BENEFITS ===*/
 .benefits {
   text-align: center; }
   .benefits .col-4 i {
@@ -90,7 +90,7 @@ nav {
   .benefits .box {
     margin: 20px auto; }
 
-/*=== FEATURED WORKS === */
+/*=== FEATURED WORKS ===*/
 .featured {
   width: 50%;
   text-align: center;
@@ -98,7 +98,7 @@ nav {
   .featured h2 {
     text-transform: uppercase; }
 
-/*=== GALLERY === */
+/*=== GALLERY ===*/
 .image {
   width: 100%;
   position: relative;
@@ -115,7 +115,7 @@ nav {
   height: 100%;
   width: 100%;
   text-align: center;
-  transition: 0.5s;
+  transition: .5s;
   color: #FFF; }
   .layer .fa {
     color: #FFF;
@@ -128,7 +128,7 @@ nav {
     border-radius: 10px;
     background: #313332;
     opacity: 0;
-    transition: opacity 0.5s; }
+    transition: opacity .5s; }
     .layer .fa:last-child {
       margin-right: 0; }
 
@@ -171,16 +171,16 @@ nav {
       color: #FFF;
       opacity: 0;
       margin: 0;
-      transition: opacity 0.5s; }
+      transition: opacity .5s; }
     .crew #gallery .layer {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      transition: 0.5s; }
+      transition: .5s; }
 
-/*=== TITLE === */
+/*=== TITLE ===*/
 .title {
   background-color: #000;
   width: 100%; }
@@ -190,7 +190,7 @@ nav {
   .title img {
     width: 100%; }
 
-/*=== NUMBERS === */
+/*=== NUMBERS ===*/
 .numbers {
   text-align: center; }
   .numbers h2,
@@ -199,7 +199,7 @@ nav {
   .numbers p {
     color: #00C7E8; }
 
-/*=== FOOTER === */
+/*=== FOOTER ===*/
 .footer {
   margin: 0 auto;
   width: 100%;
@@ -227,7 +227,7 @@ nav {
   .social-media i:last-child {
     margin-right: 0; }
 
-/*=== COPYRIGHT === */
+/*=== COPYRIGHT ===*/
 .copyright {
   margin: 0 auto;
   width: 100%;
@@ -241,13 +241,13 @@ nav {
   .copyright p {
     margin: 0; }
 
-/*=== CLEARFIX === */
+/*=== CLEARFIX ===*/
 .row::before, .row::after {
   content: " ";
   display: table;
   clear: both; }
 
-/*=== GRID === */
+/*=== GRID ===*/
 [class*="col-"] {
   float: left;
   min-height: 1px;
@@ -289,7 +289,7 @@ nav {
 .col-12 {
   width: 100%; }
 
-/*=== OFFSETS === */
+/*=== OFFSETS ===*/
 .col-offset-0 {
   margin-left: 0; }
 
@@ -330,43 +330,30 @@ nav {
   /* For mobile: */
   .col-s-1 {
     width: 8.33%; }
-
   .col-s-2 {
     width: 16.66%; }
-
   .col-s-3 {
     width: 25%; }
-
   .col-s-4 {
     width: 33.33%; }
-
   .col-s-5 {
     width: 41.66%; }
-
   .col-s-6 {
     width: 50%; }
-
   .col-s-7 {
     width: 58.33%; }
-
   .col-s-8 {
     width: 66.66%; }
-
   .col-s-9 {
     width: 75%; }
-
   .col-s-10 {
     width: 83.33%; }
-
   .col-s-11 {
     width: 91.66%; }
-
   .col-s-12 {
     width: 100%; }
-
   .container {
     max-width: 767px; }
-
   /* === HEADER === */
   header {
     max-width: 767px;
@@ -380,8 +367,7 @@ nav {
         float: none; }
         header nav ul li {
           display: block; }
-
-  /*=== JUMBOTRON === */
+  /*=== JUMBOTRON ===*/
   .slogan {
     padding: 20px;
     width: 100%;
@@ -391,71 +377,56 @@ nav {
     bottom: 0;
     left: 0;
     transform: none; }
-
-  /*=== BENEFITS === */
+  /*=== BENEFITS ===*/
   .benefits h2,
   .benefits p {
     padding: 15px; }
-
-  /*=== FEATURED WORKS === */
+  /*=== FEATURED WORKS ===*/
   .featured {
     width: 90%;
     max-width: 767px; }
-
-  /*=== TITLE === */
+  /*=== TITLE ===*/
   .title [class*="col-s"] {
     padding: 15px; }
   .title h2 {
     text-align: center; }
-
   .image-moon img {
     width: 50%;
     height: 50%;
     margin: 0 auto;
     max-width: 350px;
-    display: block; } }
-/*=== FOOTER ===*/
- * footer h2,
- * footer p
- * 	padding: 15px */
+    display: block; }
+  /*=== FOOTER ===*/
+  footer h2,
+  footer p {
+    padding: 15px; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   /* For tablets */
   .col-m-1 {
     width: 8.33%; }
-
   .col-m-2 {
     width: 16.66%; }
-
   .col-m-3 {
     width: 25%; }
-
   .col-m-4 {
     width: 33.33%; }
-
   .col-m-5 {
     width: 41.66%; }
-
   .col-m-6 {
     width: 50%; }
-
   .col-m-7 {
     width: 58.33%; }
-
   .col-m-8 {
     width: 66.66%; }
-
   .col-m-9 {
     width: 75%; }
-
   .col-m-10 {
     width: 83.33%; }
-
   .col-m-11 {
     width: 91.66%; }
-
   .col-m-12 {
     width: 100%; }
-
   .slogan {
     padding: 20px;
     width: 100%;

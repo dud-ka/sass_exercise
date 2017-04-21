@@ -39,15 +39,19 @@ module.exports = function(grunt) {
   				'*.css',
   				'*.html'
   				]
+  			},
+  			options: {
+  				watchTask: true,
+  				server: '.'
   			}
   		}
   	}
   });
   // Load the plugins tasks 
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
